@@ -11,9 +11,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
-        fm.replace(R.id.fragmentPlaceholder, new MusicFragment());
-
-        fm.commit();
     }
 }
