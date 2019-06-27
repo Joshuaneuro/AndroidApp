@@ -9,7 +9,7 @@ public class Serie {
     private int id;
     private int userId;
     private String name;
-    private int episodes;
+    private int amountEpisodes;
     private int currentEpisode;
     private int rating;
     private String date;
@@ -39,12 +39,12 @@ public class Serie {
         this.name = name;
     }
 
-    public int getEpisodes() {
-        return episodes;
+    public int getAmountEpisodes() {
+        return amountEpisodes;
     }
 
-    public void setEpisodes(int episodes) {
-        this.episodes = episodes;
+    public void setAmountEpisodes(int episodes) {
+        this.amountEpisodes = episodes;
     }
 
     public int getCurrentEpisode() {
