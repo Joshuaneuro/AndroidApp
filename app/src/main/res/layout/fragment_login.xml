@@ -16,7 +16,7 @@
         app:layout_constraintTop_toBottomOf="@+id/UserName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:text="Login >"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
 
 </android.support.constraint.ConstraintLayout>
