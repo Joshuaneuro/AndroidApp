@@ -16,6 +16,14 @@ public class LoginFragment extends Fragment {
         TextView usernameText = getView().findViewById(R.id.loginText);
         TextView passwordText = getView().findViewById(R.id.passwordText);
 
+        loginbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                // Do something
+            }
+        });
+
         return inflater.inflate(R.layout.fragment_login, viewGroup,false);
 
     }
@@ -26,8 +34,6 @@ public class LoginFragment extends Fragment {
 
 
     }
-
-
 
     //TextView textView = (TextView)findViewById(R.id.loginText);
 }
