@@ -24,7 +24,7 @@ public class LoginFragment extends Fragment {
             public void onClick(View view)
             {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment, new FriendsFragment());
+                fragmentTransaction.replace(R.id.fragmentWrapper, new FriendsFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
