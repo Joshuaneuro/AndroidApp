@@ -8,10 +8,19 @@ public class User {
     @PrimaryKey
     private int userId;
     private String name;
-    private String passwd;
+    private String email;
+    private String token;
 
     public int getUserId() {
         return userId;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public void setUserId(int userId) {
@@ -26,11 +35,11 @@ public class User {
         this.name = name;
     }
 
-    public String getPasswd() {
-        return passwd;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPasswd(String passwd) {
-        this.passwd = passwd;
+    public void setEmail(String passwd) {
+        this.email = email;
     }
 }

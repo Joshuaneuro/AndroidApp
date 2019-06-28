@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         User u = new User();
         u.setUserId(1);
         u.setName("TestUser");
-        u.setPasswd("Password");
+        u.setToken("");
         db.userDao().insertAll(u);
     }
     public void DataUpdate() {
