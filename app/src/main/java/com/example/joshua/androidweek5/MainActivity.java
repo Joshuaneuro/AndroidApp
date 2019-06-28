@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_login);
+        setContentView(R.layout.activity_main);
         createDatabase();
 
     }
@@ -20,12 +20,6 @@ public class MainActivity extends AppCompatActivity {
                 .allowMainThreadQueries() // SHOULD NOT BE USED IN PRODUCTION !!!
                 .fallbackToDestructiveMigration()
                 .build();
-
-        User u = new User();
-        u.setUserId(1);
-        u.setName("TestUser");
-        u.setToken("");
-        db.userDao().insertAll(u);
     }
     public void DataUpdate() {
 
